@@ -32,51 +32,7 @@ struct GameObject {
 
 let nilGameObject = GameObject(id: "nilObject")
 
-class Grid {
-    
-    var gridMap: Dictionary<GridPoint, GameObject> = [GridPoint(): GameObject()]
-    
-    init() {
-    }
-    
-    func assignToGridPoint(object: GameObject, point: GridPoint) {
-        gridMap[point] = object
-    }
-    
-    func removeFromGridPoint(point: GridPoint) -> GameObject {
-        if let returnVal = gridMap.removeValueForKey(point){
-            return returnVal
-        } else {
-            return nilGameObject
-        }
-    }
-    
-    func objectAtGridPoint(point: GridPoint) -> GameObject {
-        if let val = gridMap[point]{
-            return val
-        } else {
-            return nilGameObject
-        }
-    }
-    
-    func clear() {
-        gridMap.removeAll(keepCapacity: true)
-    }
-    
-}
 
-let grid = Grid()
-grid.assignToGridPoint(GameObject(), point: gp4)
-grid.assignToGridPoint(GameObject(id: "Luigi"), point: gp3)
-
-let obj  = grid.objectAtGridPoint(gp4)
-let obj2 = grid.objectAtGridPoint(gp3)
-
-let obj3 = grid.objectAtGridPoint(gp)
-let obj4 = grid.objectAtGridPoint(gp2)
-
-let objr2 = grid.removeFromGridPoint(gp4)
-let objr  = grid.removeFromGridPoint(gp2)
 
 
 
