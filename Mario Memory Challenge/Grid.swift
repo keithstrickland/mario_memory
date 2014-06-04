@@ -18,19 +18,38 @@ func ==(lhs: GridPoint, rhs: GridPoint) -> Bool {
     return lhs.x == rhs.x && lhs.y == rhs.y
 }
 
-struct GameObject {
-    var id  = "Mario"
-}
-
-class Grid {
-   
-    var gridMap: Dictionary<GridPoint, GameObject> = [GridPoint(): GameObject()]
+class Grid<ObjectType> {
     
-    init() {
+    var gridMap: Dictionary<GridPoint, ObjectType>
+    var nilObject: ObjectType
+    
+    init(nilObject: ObjectType) {
+        self.gridMap = Dictionary<GridPoint, ObjectType>()
+        self.nilObject = nilObject
     }
     
-    func assignToGridPoint(object: GameObject, point: GridPoint) {
+    func assignToPoint(point: GridPoint, object: ObjectType) {
         gridMap[point] = object
-     }
+    }
+    
+    func removeFromPoint(point: GridPoint) -> ObjectType {
+        if let returnVal = gridMap.removeValueForKey(point){
+            return returnVal
+        } else {
+            return nilObject
+        }
+    }
+    
+    func objectAtPoint(point: GridPoint) -> ObjectType {
+        if let val = gridMap[point]{
+            return val
+        } else {
+            return nilObject
+        }
+    }
+    
+    func clear() {
+        gridMap.removeAll(keepCapacity: true)
+    }
     
 }

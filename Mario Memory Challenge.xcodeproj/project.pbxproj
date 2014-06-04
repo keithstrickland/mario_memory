@@ -15,6 +15,7 @@
 		B6FEA5BA193F6D0F00431C82 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6FEA5B9193F6D0F00431C82 /* Images.xcassets */; };
 		B6FEA5C6193F6D1000431C82 /* Mario_Memory_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FEA5C5193F6D1000431C82 /* Mario_Memory_ChallengeTests.swift */; };
 		B6FEA5D3193F746500431C82 /* Grid.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FEA5D2193F746500431C82 /* Grid.swift */; };
+		B6FEA5D5193FA7A700431C82 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6FEA5D4193FA7A700431C82 /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		B6FEA5C5193F6D1000431C82 /* Mario_Memory_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mario_Memory_ChallengeTests.swift; sourceTree = "<group>"; };
 		B6FEA5D1193F722E00431C82 /* MarioPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MarioPlayground.playground; sourceTree = "<group>"; };
 		B6FEA5D2193F746500431C82 /* Grid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Grid.swift; sourceTree = "<group>"; };
+		B6FEA5D4193FA7A700431C82 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 				B6FEA5AC193F6D0F00431C82 /* Supporting Files */,
 				B6FEA5D1193F722E00431C82 /* MarioPlayground.playground */,
 				B6FEA5D2193F746500431C82 /* Grid.swift */,
+				B6FEA5D4193FA7A700431C82 /* Card.swift */,
 			);
 			path = "Mario Memory Challenge";
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 			files = (
 				B6FEA5B3193F6D0F00431C82 /* GameScene.swift in Sources */,
 				B6FEA5B5193F6D0F00431C82 /* GameViewController.swift in Sources */,
+				B6FEA5D5193FA7A700431C82 /* Card.swift in Sources */,
 				B6FEA5AF193F6D0F00431C82 /* AppDelegate.swift in Sources */,
 				B6FEA5D3193F746500431C82 /* Grid.swift in Sources */,
 			);
